@@ -13,10 +13,10 @@ body{
 	border: 2px solid #FFFFFF;
 	margin: 1em auto;
 }
-.bg-portafolio{
+.bg-portfolio{
 	background-color: #F05F40;
 }
-.text-portafolio{
+.text-portfolio{
 	color: #F05F40;
 }
 .text-white{
@@ -35,7 +35,7 @@ body{
 	background-repeat: no-repeat;
 	padding: 15% 10%;
 }
-.navbar .portafolio{
+.navbar .portfolio{
 	color: #F05F40;
 }
 .navbar #bs-example-navbar-collapse-1 .list{
@@ -53,23 +53,23 @@ body{
 	color: #FFFFFF;
 }
 /*--------PRESENTACIÓN----------*/
-.presentacion{
+.presentation{
 	margin-bottom: 0px;
 }
-#sobremi{
+#about{
 	padding: 5% 20%;
 }
 .name{
 	font-size: 3em;
 }
-/*--------SERVICIOS----------*/
-.servicios{
+/*--------services----------*/
+.services{
 	padding: 5% 0%;
 }
 .icon{
 	font-size: 3em;
 }
-.tipos-servicios{
+.tipos-services{
 	padding: 10% 0%;
 } /*
 /*--------NUEVOS PROYECTOS----------*/

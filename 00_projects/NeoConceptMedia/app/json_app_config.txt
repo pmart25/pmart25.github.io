@@ -1,0 +1,7 @@
+{
+"newsletter_last_email"="";
+"numbers_of_users"="";
+"last_10_logins"="";
+"last_backup_time"="";
+"backup_freq_in_days"="";
+}

@@ -1,0 +1,72 @@
+
+Options +FollowSymLinks
+RewriteEngine On
+
+
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 	
+RewriteRule ^(.*)/$ $1.php
+RewriteRule ^htaccess/?$ index.php  [L]
+RewriteRule ^/?$ index.php  [L]
+RewriteRule ^home/.$ index.php  [L]
+RewriteRule ^register/?$ register.php  
+
+
+#
+#
+#  RewriteRule ^users/(\d+)*$ ./profile.php?id=$1
+#  RewriteRule ^threads/(\d+)*$ ./thread.php?id=$1
+#
+#
+
+
+
+
+#about
+RewriteRule ^about/?$ about.php  [L]
+#advertiser	
+RewriteRule ^advertiser/?$ advertiser.php  [L]
+#blog	
+RewriteRule ^blog/?$ blog.php  [L]
+
+#blog_sidebar - no necessary	
+#crypt	 - no necessary
+#disclaimer	
+RewriteRule ^disclaimer/?$ disclaimer.php  [L]
+#footer	 - no necessary
+#functions	- no necessary
+#header	 - no necessary
+#helpdesk	
+RewriteRule ^helpdesk/?$ helpdesk.php  [L]
+#index	
+RewriteRule ^index/?$ index.php  [L]
+RewriteRule ^home/?$ index.php  [L]
+
+#ncp_backup	 - no necessary
+#Paypal_IPN	 - no necessary
+#publisher	
+RewriteRule ^publisher/?$ publisher.php  [L]
+#register	
+RewriteRule ^registration/?$ register.php  [L]
+RewriteRule ^register/?$ register.php  [L]
+#rep
+RewriteRule ^rep/(\d+)?$ rep.php?n=$1  [L]
+#settings
+RewriteRule ^settings/?$ settings.php  [L]
+#sidebar - no necessary
+
+#shortlinks	
+RewriteRule ^shortlinks/?$ shortlinks.php  [L]
+RewriteRule ^shortlink/?$ shortlinks.php  [L]
+
+
+
+#rep
+RewriteRule ^sh/r/([a-zA-Z0-9-_]+)*$ ./rep.php?r=$1
+RewriteRule ^sh/n/([a-zA-Z0-9-_]+)*$ ./rep.php?n=$1
+
+
+
+ErrorDocument 404    /NCM.Website/000_dev/000_release_candidate/404.php 

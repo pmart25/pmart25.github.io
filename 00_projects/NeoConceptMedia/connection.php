@@ -20,15 +20,15 @@ $GLOBALS ["debug_mode"] = 1;
 if ( $GLOBALS ["local"] == 0) {
 
 
-define('DB_SERVER','mysql15.000webhost.com');
-define('connection','a7010140_db');
-define('DB_USER','a7010140_user');
-define('DB_PASS','Jupi12345_67890');
+define('DB_SERVER','mysql_host.com');
+define('connection','XXXX');
+define('DB_USER','XXXX');
+define('DB_PASS','XXXX');
  
  } else {
  
 define('DB_SERVER','localhost');
-define('connection','a7010140_db');
+define('connection','XXXX');
 define('DB_USER','root');
 define('DB_PASS','root');
  
@@ -43,10 +43,10 @@ define('DB_PASS','root');
 function paypal_connnection () {
 	
 	   if ( $GLOBALS ["local"] == 0) {		 
-		 $servername = "mysql15.000webhost.com";
-		 $username = "a7010140_user";
-		 $password = "Jupi12345_67890";
-         $dbname = "a7010140_db";
+		 $servername = "mysql_webhost.com";
+		 $username = "XXXX";
+		 $password = "XXXX";
+         $dbname = "XXXX";
 
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
